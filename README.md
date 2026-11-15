@@ -327,7 +327,7 @@ Deployment configuration:
 | Main file path | `app.py` |
 | Python version | `3.12` |
 
-**Live application:** [YOUR_STREAMLIT_APP_URL](YOUR_STREAMLIT_APP_URL)
+**Live application:** [https://scrabble-pluto.streamlit.app](https://scrabble-pluto.streamlit.app)
 
 ---
 
@@ -361,7 +361,7 @@ The project uses the wordlist supplied with the project under `data/words.txt`.
 
 The list was obtained through the following community discussion:
 
-[Latest Collins Scrabble Words List in Text File – Board & Card Games Stack Exchange](https://boardgames.stackexchange.com/questions/38366/latest-collins-scrabble-words-list-in-text-file)
+[2019 Collins Scrabble Words List in Text File – Board & Card Games Stack Exchange](https://boardgames.stackexchange.com/questions/38366/latest-collins-scrabble-words-list-in-text-file)
 
 The accompanying `data/README.txt` contains additional information about the wordlist. The wordlist is used as the project's dictionary input for academic coursework; this repository does not independently certify its provenance or redistribution permissions.
 
