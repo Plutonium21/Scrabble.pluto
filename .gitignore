@@ -1,0 +1,37 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python tooling caches
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Environment variables and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and operating system files
+.idea/
+.DS_Store
+Thumbs.db
