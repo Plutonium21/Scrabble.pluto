@@ -394,6 +394,9 @@ with board_column:
                 f"**{chr(65 + c)}**"
             )
 
+        # Collect styles for occupied tiles
+        occupied_tile_rules = []
+
         # Board rows
         for r in range(15):
 
@@ -415,7 +418,17 @@ with board_column:
                         if tile.is_blank
                         else tile.letter
                     )
+                    occupied_tile_rules.append(f"""
+                        .st-key-sq_{r}_{c} button {{
+                            background-color: #FFD54F !important;
+                            color: #352817 !important;
+                            border: 1px solid #B8860B !important;
+                        }}
 
+                        .st-key-sq_{r}_{c} button p {{
+                            color: #352817 !important;
+                        }}
+                    """)
                 else:
 
                     premium = premium_at(r, c)
@@ -439,7 +452,11 @@ with board_column:
                     args=(r, c),
                     use_container_width=True
                 )
-
+        # NEW: inject CSS after rendering all cells
+        st.markdown(
+            "<style>" + "\n".join(occupied_tile_rules) + "</style>",
+            unsafe_allow_html=True
+        )
 
 # ==================================================
 # RIGHT COLUMN: GAME CONTROLS
